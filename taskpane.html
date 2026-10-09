@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MyMonolith Aufgaben</title>
+    <link rel="icon" href="/mymonolith-addin/assets/icon-32.png" />
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    <script type="module" crossorigin src="/mymonolith-addin/assets/taskpane-Cl5YEM4K.js"></script>
+    <link rel="stylesheet" crossorigin href="/mymonolith-addin/assets/taskpane-C5noB5oi.css">
+  </head>
+  <body>
+    <!-- Kein eigener Kopf: Outlook zeigt Name und Logo des Add-ins bereits über der Seitenleiste -->
+    <div id="update-note" class="update-note" hidden>Neue Version verfügbar. <button class="small">Neu laden</button></div>
+    <main id="app"></main>
+    <footer class="footer hint">
+      <span id="version"></span>
+      <button class="link small" id="logout-link" hidden title="Vom MyMonolith-Konto abmelden">Abmelden</button>
+    </footer>
+  </body>
+</html>
