@@ -3,3 +3,6 @@
 Office.actions.associate("onMessageSendHandler", function (event) {
   event.completed({ allowEvent: true });
 });
+Office.actions.associate("onNewComposeHandler", function (event) {
+  event.completed();
+});

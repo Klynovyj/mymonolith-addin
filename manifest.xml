@@ -160,10 +160,11 @@
                 </Group>
               </OfficeTab>
             </ExtensionPoint>
-            <!-- Beim Senden: Mail an die gewählte Aufgabe posten -->
+            <!-- Beim Antworten: Aufgabe vorschlagen; beim Senden: Mail an die gewählten Aufgaben posten -->
             <ExtensionPoint xsi:type="LaunchEvent">
               <LaunchEvents>
                 <LaunchEvent Type="OnMessageSend" FunctionName="onMessageSendHandler" SendMode="SoftBlock"/>
+                <LaunchEvent Type="OnNewMessageCompose" FunctionName="onNewComposeHandler"/>
               </LaunchEvents>
               <SourceLocation resid="SendRuntime.Url"/>
             </ExtensionPoint>
