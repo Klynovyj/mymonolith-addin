@@ -6,7 +6,7 @@
            xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0"
            xsi:type="MailApp">
   <Id>6a9184d0-cfd5-4bd8-84c4-5eec8f28d457</Id>
-  <Version>1.4.0.0</Version>
+  <Version>1.5.0.0</Version>
   <ProviderName>Andrej Chenfeld</ProviderName>
   <DefaultLocale>de-DE</DefaultLocale>
   <DisplayName DefaultValue="MyMonolith Aufgaben"/>
@@ -100,7 +100,7 @@
 
     <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides/1.1" xsi:type="VersionOverridesV1_1">
       <Requirements>
-        <bt:Sets DefaultMinVersion="1.12">
+        <bt:Sets DefaultMinVersion="1.5">
           <bt:Set Name="Mailbox"/>
         </bt:Sets>
       </Requirements>
@@ -169,6 +169,31 @@
               <SourceLocation resid="SendRuntime.Url"/>
             </ExtensionPoint>
           </DesktopFormFactor>
+          <!-- Outlook-App auf Handy/Tablet: Knopf beim Lesen einer Mail -->
+          <MobileFormFactor>
+            <ExtensionPoint xsi:type="MobileMessageReadCommandSurface">
+              <Group id="mmMobileGroup">
+                <Label resid="GroupLabel"/>
+                <Control xsi:type="MobileButton" id="mmMobileOpen">
+                  <Label resid="BtnLabel"/>
+                  <Icon xsi:type="bt:MobileIconList">
+                    <bt:Image size="25" scale="1" resid="Icon25"/>
+                    <bt:Image size="25" scale="2" resid="Icon50"/>
+                    <bt:Image size="25" scale="3" resid="Icon75"/>
+                    <bt:Image size="32" scale="1" resid="Icon32"/>
+                    <bt:Image size="32" scale="2" resid="Icon64"/>
+                    <bt:Image size="32" scale="3" resid="Icon96"/>
+                    <bt:Image size="48" scale="1" resid="Icon48"/>
+                    <bt:Image size="48" scale="2" resid="Icon96"/>
+                    <bt:Image size="48" scale="3" resid="Icon144"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="TaskpaneUrl"/>
+                  </Action>
+                </Control>
+              </Group>
+            </ExtensionPoint>
+          </MobileFormFactor>
         </Host>
       </Hosts>
       <Resources>
@@ -176,6 +201,13 @@
           <bt:Image id="Icon16" DefaultValue="https://klynovyj.github.io/mymonolith-addin/assets/icon-16.png"/>
           <bt:Image id="Icon32" DefaultValue="https://klynovyj.github.io/mymonolith-addin/assets/icon-32.png"/>
           <bt:Image id="Icon80" DefaultValue="https://klynovyj.github.io/mymonolith-addin/assets/icon-80.png"/>
+          <bt:Image id="Icon25" DefaultValue="https://klynovyj.github.io/mymonolith-addin/assets/icon-25.png"/>
+          <bt:Image id="Icon48" DefaultValue="https://klynovyj.github.io/mymonolith-addin/assets/icon-48.png"/>
+          <bt:Image id="Icon50" DefaultValue="https://klynovyj.github.io/mymonolith-addin/assets/icon-50.png"/>
+          <bt:Image id="Icon64" DefaultValue="https://klynovyj.github.io/mymonolith-addin/assets/icon-64.png"/>
+          <bt:Image id="Icon75" DefaultValue="https://klynovyj.github.io/mymonolith-addin/assets/icon-75.png"/>
+          <bt:Image id="Icon96" DefaultValue="https://klynovyj.github.io/mymonolith-addin/assets/icon-96.png"/>
+          <bt:Image id="Icon144" DefaultValue="https://klynovyj.github.io/mymonolith-addin/assets/icon-144.png"/>
         </bt:Images>
         <bt:Urls>
           <bt:Url id="TaskpaneUrl" DefaultValue="https://klynovyj.github.io/mymonolith-addin/taskpane.html"/>
