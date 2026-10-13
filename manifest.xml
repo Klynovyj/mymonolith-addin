@@ -9,8 +9,14 @@
   <Version>1.5.1.0</Version>
   <ProviderName>Andrej Chenfeld</ProviderName>
   <DefaultLocale>de-DE</DefaultLocale>
-  <DisplayName DefaultValue="MyMonolith Aufgaben"/>
-  <Description DefaultValue="MyMonolith-Aufgaben in Outlook anzeigen, kommentieren und Mails an Aufgaben anhängen."/>
+  <DisplayName DefaultValue="MyMonolith Aufgaben">
+    <Override Locale="en-US" Value="MyMonolith Tasks"/>
+    <Override Locale="ru-RU" Value="MyMonolith Задачи"/>
+  </DisplayName>
+  <Description DefaultValue="MyMonolith-Aufgaben in Outlook anzeigen, kommentieren und Mails an Aufgaben anhängen.">
+    <Override Locale="en-US" Value="View and comment on MyMonolith tasks in Outlook and attach emails to tasks."/>
+    <Override Locale="ru-RU" Value="Просмотр и комментирование задач MyMonolith в Outlook, прикрепление писем к задачам."/>
+  </Description>
   <IconUrl DefaultValue="https://klynovyj.github.io/mymonolith-addin/assets/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="https://klynovyj.github.io/mymonolith-addin/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://new.my-monolith.com/"/>
@@ -91,10 +97,16 @@
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="MyMonolith"/>
-        <bt:String id="BtnLabel" DefaultValue="Aufgaben"/>
+        <bt:String id="BtnLabel" DefaultValue="Aufgaben">
+          <bt:Override Locale="en-US" Value="Tasks"/>
+          <bt:Override Locale="ru-RU" Value="Задачи"/>
+        </bt:String>
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="BtnDesc" DefaultValue="Öffnet Ihre MyMonolith-Aufgaben in der Seitenleiste."/>
+        <bt:String id="BtnDesc" DefaultValue="Öffnet Ihre MyMonolith-Aufgaben in der Seitenleiste.">
+          <bt:Override Locale="en-US" Value="Opens your MyMonolith tasks in the side panel."/>
+          <bt:Override Locale="ru-RU" Value="Открывает Ваши задачи MyMonolith на боковой панели."/>
+        </bt:String>
       </bt:LongStrings>
     </Resources>
 
@@ -216,12 +228,24 @@
         </bt:Urls>
         <bt:ShortStrings>
           <bt:String id="GroupLabel" DefaultValue="MyMonolith"/>
-          <bt:String id="BtnLabel" DefaultValue="Aufgaben"/>
-          <bt:String id="ComposeBtnLabel" DefaultValue="Aufgabe wählen"/>
+          <bt:String id="BtnLabel" DefaultValue="Aufgaben">
+            <bt:Override Locale="en-US" Value="Tasks"/>
+            <bt:Override Locale="ru-RU" Value="Задачи"/>
+          </bt:String>
+          <bt:String id="ComposeBtnLabel" DefaultValue="Aufgabe wählen">
+            <bt:Override Locale="en-US" Value="Choose task"/>
+            <bt:Override Locale="ru-RU" Value="Выбрать задачу"/>
+          </bt:String>
         </bt:ShortStrings>
         <bt:LongStrings>
-          <bt:String id="BtnDesc" DefaultValue="Öffnet Ihre MyMonolith-Aufgaben in der Seitenleiste."/>
-          <bt:String id="ComposeBtnDesc" DefaultValue="Wählt die MyMonolith-Aufgabe, an die diese Mail beim Senden gepostet wird."/>
+          <bt:String id="BtnDesc" DefaultValue="Öffnet Ihre MyMonolith-Aufgaben in der Seitenleiste.">
+            <bt:Override Locale="en-US" Value="Opens your MyMonolith tasks in the side panel."/>
+            <bt:Override Locale="ru-RU" Value="Открывает Ваши задачи MyMonolith на боковой панели."/>
+          </bt:String>
+          <bt:String id="ComposeBtnDesc" DefaultValue="Wählt die MyMonolith-Aufgabe, an die diese Mail beim Senden gepostet wird.">
+            <bt:Override Locale="en-US" Value="Chooses the MyMonolith task this email is posted to when sent."/>
+            <bt:Override Locale="ru-RU" Value="Выбирает задачу MyMonolith, в которую письмо будет опубликовано при отправке."/>
+          </bt:String>
         </bt:LongStrings>
       </Resources>
     </VersionOverrides>
