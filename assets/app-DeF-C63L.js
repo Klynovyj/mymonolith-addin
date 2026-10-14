@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/main-DYqDNxGF.js","assets/chatpost-BBzMMCUN.js","assets/util-DFs35ur5.js","assets/i18n-D-GIWYfO.js","assets/composemail-DSJDsF-H.js","assets/preload-helper-DmqPR1C2.js","assets/theme-rVm8UlTi.js","assets/theme-zYsslZac.css"])))=>i.map(i=>d[i]);
+import"./i18n-D-GIWYfO.js";import{s as o}from"./theme-rVm8UlTi.js";import{_ as t}from"./preload-helper-DmqPR1C2.js";o("System");t(()=>import("./main-DYqDNxGF.js"),__vite__mapDeps([0,1,2,3,4,5,6,7]));
