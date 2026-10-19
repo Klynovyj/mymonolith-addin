@@ -6,16 +6,16 @@
            xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0"
            xsi:type="MailApp">
   <Id>6a9184d0-cfd5-4bd8-84c4-5eec8f28d457</Id>
-  <Version>1.10.0.0</Version>
+  <Version>1.10.1.0</Version>
   <ProviderName>Andrej Chenfeld</ProviderName>
   <DefaultLocale>de-DE</DefaultLocale>
-  <DisplayName DefaultValue="MyMonolith Aufgaben">
-    <Override Locale="en-US" Value="MyMonolith Tasks"/>
-    <Override Locale="ru-RU" Value="MyMonolith Задачи"/>
+  <DisplayName DefaultValue="M-Servicedesk">
+    <Override Locale="en-US" Value="M-Servicedesk"/>
+    <Override Locale="ru-RU" Value="M-Servicedesk"/>
   </DisplayName>
-  <Description DefaultValue="MyMonolith-Aufgaben in Outlook anzeigen, kommentieren und Mails an Aufgaben anhängen.">
-    <Override Locale="en-US" Value="View and comment on MyMonolith tasks in Outlook and attach emails to tasks."/>
-    <Override Locale="ru-RU" Value="Просмотр и комментирование задач MyMonolith в Outlook, прикрепление писем к задачам."/>
+  <Description DefaultValue="MyMonolith-Aufgaben und IT-Tickets in Outlook: anzeigen, kommentieren, Mails anhängen.">
+    <Override Locale="en-US" Value="MyMonolith tasks and IT tickets in Outlook: view, comment, attach emails."/>
+    <Override Locale="ru-RU" Value="Задачи MyMonolith и IT-заявки в Outlook: просмотр, комментарии, прикрепление писем."/>
   </Description>
   <IconUrl DefaultValue="https://klynovyj.github.io/mymonolith-addin/assets/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="https://klynovyj.github.io/mymonolith-addin/assets/icon-128.png"/>
@@ -96,16 +96,16 @@
         <bt:Url id="TaskpaneUrl" DefaultValue="https://klynovyj.github.io/mymonolith-addin/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
-        <bt:String id="GroupLabel" DefaultValue="MyMonolith"/>
-        <bt:String id="BtnLabel" DefaultValue="Aufgaben">
-          <bt:Override Locale="en-US" Value="Tasks"/>
-          <bt:Override Locale="ru-RU" Value="Задачи"/>
+        <bt:String id="GroupLabel" DefaultValue="M-Servicedesk"/>
+        <bt:String id="BtnLabel" DefaultValue="M-Servicedesk">
+          <bt:Override Locale="en-US" Value="M-Servicedesk"/>
+          <bt:Override Locale="ru-RU" Value="M-Servicedesk"/>
         </bt:String>
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="BtnDesc" DefaultValue="Öffnet Ihre MyMonolith-Aufgaben in der Seitenleiste.">
-          <bt:Override Locale="en-US" Value="Opens your MyMonolith tasks in the side panel."/>
-          <bt:Override Locale="ru-RU" Value="Открывает Ваши задачи MyMonolith на боковой панели."/>
+        <bt:String id="BtnDesc" DefaultValue="Öffnet MyMonolith-Aufgaben und IT-Tickets in der Seitenleiste.">
+          <bt:Override Locale="en-US" Value="Opens MyMonolith tasks and IT tickets in the side panel."/>
+          <bt:Override Locale="ru-RU" Value="Открывает задачи MyMonolith и IT-заявки на боковой панели."/>
         </bt:String>
       </bt:LongStrings>
     </Resources>
@@ -227,10 +227,10 @@
           <bt:Url id="SendRuntimeJs.Url" DefaultValue="https://klynovyj.github.io/mymonolith-addin/send-classic.js"/>
         </bt:Urls>
         <bt:ShortStrings>
-          <bt:String id="GroupLabel" DefaultValue="MyMonolith"/>
-          <bt:String id="BtnLabel" DefaultValue="Aufgaben">
-            <bt:Override Locale="en-US" Value="Tasks"/>
-            <bt:Override Locale="ru-RU" Value="Задачи"/>
+          <bt:String id="GroupLabel" DefaultValue="M-Servicedesk"/>
+          <bt:String id="BtnLabel" DefaultValue="M-Servicedesk">
+            <bt:Override Locale="en-US" Value="M-Servicedesk"/>
+            <bt:Override Locale="ru-RU" Value="M-Servicedesk"/>
           </bt:String>
           <bt:String id="ComposeBtnLabel" DefaultValue="Aufgabe wählen">
             <bt:Override Locale="en-US" Value="Choose task"/>
@@ -238,9 +238,9 @@
           </bt:String>
         </bt:ShortStrings>
         <bt:LongStrings>
-          <bt:String id="BtnDesc" DefaultValue="Öffnet Ihre MyMonolith-Aufgaben in der Seitenleiste.">
-            <bt:Override Locale="en-US" Value="Opens your MyMonolith tasks in the side panel."/>
-            <bt:Override Locale="ru-RU" Value="Открывает Ваши задачи MyMonolith на боковой панели."/>
+          <bt:String id="BtnDesc" DefaultValue="Öffnet MyMonolith-Aufgaben und IT-Tickets in der Seitenleiste.">
+            <bt:Override Locale="en-US" Value="Opens MyMonolith tasks and IT tickets in the side panel."/>
+            <bt:Override Locale="ru-RU" Value="Открывает задачи MyMonolith и IT-заявки на боковой панели."/>
           </bt:String>
           <bt:String id="ComposeBtnDesc" DefaultValue="Wählt die MyMonolith-Aufgabe, an die diese Mail beim Senden gepostet wird.">
             <bt:Override Locale="en-US" Value="Chooses the MyMonolith task this email is posted to when sent."/>
